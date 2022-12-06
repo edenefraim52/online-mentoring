@@ -1,0 +1,59 @@
+.modalContainer{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left: 0;
+    right:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color:rgba(0,0,0,0.55)
+
+}
+
+.modal{
+    background-color: rgba(255,255,255,0.75);
+    width:calc(15% + 15vw);
+    height: auto;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.modal_header{
+ position: relative;
+ border-bottom: 1px solid #dddddd;
+}
+
+.modal_header_title{
+ text-align: center;
+}
+
+.close{
+ position: absolute;
+ top:0;
+ right:0;
+ background-color: beige;
+ color: black;
+}
+
+.modal_content{
+ border-bottom: 1px solid #dddddd;
+ padding: 2rem 0;
+}
+
+.modal_footer{
+ padding: 2rem 0;
+ padding-bottom: 0;
+}
+
+.submit{
+    float: right;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.submit{
+    margin-right: 1rem;
+}
+
