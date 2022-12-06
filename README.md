@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+To run this project please follow the following instructions:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1.	Go to the main folder of the project and run the command : npm start
+2.	Go to the folder /backend and run the command: npm start
+**now the server and the front are running**
+3.	In the front page that opened for you go to :" http://localhost:3000/login"
+For Login please use the following login info:
+Username: eden_efraim
+Password: mentor11
+**you're logged in as a mentor now and redirected to the lobby page.
+4.	Please choose one code block from the lobby. (Choose case 2)
+5.	Then choose the student from the list. (Choose aviCohen)
+6.	Click submit and you will receive 2 links, one for you and one for the student you chose. Please notice that in the student link, the student needs to log in with his password before he sees the code block.
+**open the mentor link and the student link in different browser windows.
+**in the student link you need to log in as a student to verify this is the current student:
+the student login info:
+username: aviCohen (already showing in the username input)
+password: cohen
+7.	Now you can see the student is able to edit the code and the mentor is able to view the student changes (mentor in read only mode).
+8.	In the student editor paste the exact code:
+"var myObject = {
+    foo: "bar",
+    func: function() {
+        var self = this;
+        console.log("outer func:  this.foo = " + this.foo);
+        console.log("outer func:  self.foo = " + self.foo);
+        (function() {
+            console.log("inner func:  this.foo = " + this.foo);
+            console.log("inner func:  self.foo = " + self.foo);
+        }());
+    }
+};
+myObject.func();"
+and you will see a big smiley on the screen (for 3 seconds) since you wrote the correct line for solving this code block. ("var self = this;" in line 4 is the addition code that the student added. Notice that the tabs for this line need to be exact as the following line to see the smiley).
 
-## Available Scripts
+Have fun😊
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
